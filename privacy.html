@@ -77,13 +77,38 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+/* Shared brand logos */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.brand-logo {
+  display: block;
+  width: 108px;
+  height: auto;
+}
+.mercator-logo {
+  display: block;
+  width: 144px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 16px;
+}
+header nav { gap: 16px; flex-wrap: wrap; }
+@media (max-width: 600px) {
+  .brand-logo { width: 88px; }
+  .nav-links { flex-wrap: wrap; }
+}
 </style>
 </head>
 <body>
 
 <header>
 <nav>
-  <a class="brand" href="index.html">Asobo</a>
+  <a class="brand" href="index.html"><img class="brand-logo" src="asobo-logo.png" width="1244" height="610" alt="Asobo"></a>
   <a class="back" href="index.html">← サポートに戻る</a>
 </nav>
 </header>
@@ -201,6 +226,7 @@ mercator2610@gmail.com
 </main>
 
 <footer>
+  <img class="mercator-logo" src="mercator-logo.png" width="1280" height="720" alt="Mercator" loading="lazy" decoding="async">
   <a href="index.html">サポート</a>
   <a href="terms.html">利用規約</a>
   <p>© 2026 Mercator. All rights reserved.</p>

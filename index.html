@@ -303,6 +303,31 @@ footer {
     text-align: center;
   }
 }
+
+/* Shared brand logos */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.brand-logo {
+  display: block;
+  width: 108px;
+  height: auto;
+}
+.mercator-logo {
+  display: block;
+  width: 144px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 16px;
+}
+header nav { gap: 16px; flex-wrap: wrap; }
+@media (max-width: 600px) {
+  .brand-logo { width: 88px; }
+  .nav-links { flex-wrap: wrap; }
+}
 </style>
 </head>
 
@@ -312,7 +337,7 @@ footer {
 
 <header>
   <nav>
-    <a href="index.html" class="brand">Asobo</a>
+    <a href="index.html" class="brand"><img class="brand-logo" src="asobo-logo.png" width="1244" height="610" alt="Asobo"></a>
 
     <div class="nav-links">
       <a href="#contact">お問い合わせ</a>
@@ -492,6 +517,7 @@ footer {
 <!-- Footer -->
 
 <footer>
+  <img class="mercator-logo" src="mercator-logo.png" width="1280" height="720" alt="Mercator" loading="lazy" decoding="async">
 
   <div class="footer-brand">
     Asobo by Mercator
